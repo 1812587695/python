@@ -25,4 +25,6 @@ class QuotesSpider(scrapy.Spider):
         next = response.css('.pager .next a::attr(href)').extract_first()
         url = response.urljoin(next)
         yield scrapy.Request(url=url, callback=self.parse)
-
+        # request = scrapy.Request(url=url, callback=self.parse)
+        # request.meta['PhantomJS'] = True
+        # yield request
