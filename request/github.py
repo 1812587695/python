@@ -22,8 +22,8 @@ def login_github():
             'commit': 'Sign+in',
             'utf8': '✓',
             'authenticity_token': token,
-            'login': '1812587695@qq.com',
-            'password': 'zy123456789'
+            'login': 'XXXXX@qq.com',
+            'password': 'XXXXXX'
         },
         cookies=get_cookies  # 携带get请求的cookies
     )
